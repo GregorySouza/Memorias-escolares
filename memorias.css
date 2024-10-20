@@ -1,0 +1,104 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 1s ease; /* Transição suave do fundo */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Seções anteriores... */
+
+section {
+    padding: 100px 20px;
+    background-color: #fff;
+    margin: 150px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo das imagens */
+section img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para as imagens */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Deslocado para baixo */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+}
+
+/* Estilo das legendas */
+.legenda {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Transição de surgimento gradual */
+.hidden {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Deslocado para baixo */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+}
+
+/* Quando a classe "show" é adicionada, o conteúdo se torna visível */
+.show {
+    opacity: 1;
+    transform: translateY(0); /* Volta para a posição original */
+}
+
+/* Seção de Robótica */
+.robótica-section {
+    background-color: black;
+    margin: 150px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.robotica-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Fundo escurecido quando na seção de Robótica */
+body.dark-mode {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
